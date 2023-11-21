@@ -30,7 +30,7 @@ public class IndexController {
         return "manager";
     }
 
-    //스프링시큐리티 해당 주소로 낚아챔
+    //스프링시큐리티 해당 주소로 낚아챔 - securityConfig 파일 생성후 작동하지 않음
     @GetMapping("/login")
     public @ResponseBody String login(){
         return "login";
