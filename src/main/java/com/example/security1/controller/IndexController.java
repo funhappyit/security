@@ -1,8 +1,9 @@
 package com.example.security1.controller;
 
 
-import com.example.security1.UserRepository;
+
 import com.example.security1.model.User;
+import com.example.security1.repository.UserRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 import org.springframework.stereotype.Controller;

@@ -29,7 +29,9 @@ public class SecurityConfig{
 			.anyRequest().permitAll()
 			.and()
 			.formLogin() //기본 로그인 페이지가 노출되지 않고 바로 접근이 가능
-			.loginPage("/loginForm");
+			.loginPage("/loginForm")
+			.loginProcessingUrl("/login")
+			.defaultSuccessUrl("/"); // /login
 		return http.build();
 	}
 
