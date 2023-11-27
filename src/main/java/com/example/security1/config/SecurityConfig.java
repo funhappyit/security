@@ -34,7 +34,7 @@ public class SecurityConfig{
 					.anyRequest().permitAll();
 		});
 		http.formLogin(f->f.loginPage("/loginForm").loginProcessingUrl("/login").defaultSuccessUrl("/"));
-
+		http.oauth2Login(f->f.loginPage("/loginForm"));//구글 로그인이 완료됀 후처리가 필요함
 
 		return http.build();
 	}
