@@ -76,9 +76,4 @@ public class IndexController {
 
         return "데이터 정보";
     }
-
-
-
-
-
 }
