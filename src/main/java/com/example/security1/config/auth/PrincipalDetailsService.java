@@ -2,7 +2,6 @@ package com.example.security1.config.auth;
 
 import com.example.security1.model.User;
 import com.example.security1.repository.UserRepository;
-import org.apache.catalina.realm.UserDatabaseRealm;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.core.userdetails.UserDetails;
 import org.springframework.security.core.userdetails.UserDetailsService;
